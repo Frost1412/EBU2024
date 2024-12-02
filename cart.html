@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phượt Việt - Hãy Phượt theo cách của bạn!</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <script src="script.js"></script>
+    <script src="cart.html"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="m-0 p-0 ">
+    <header>
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-1 col-2 ">
+                    <a href="index.html">
+                        <img src="img/Logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-1 bar">
+                    <label for="open">
+                        <i class="ri-menu-line"></i>
+                    </label>
+                    <input type="checkbox" id="open" hidden>
+                    <div class="wrap_more">
+                        <div class="home">
+                            <i class="ri-home-5-line"></i>
+                            <a href="#!">Trang chủ</a>
+                        </div>
+                        <div class="user">
+                            <i class="ri-user-smile-line"></i>
+                            <a href="#!">Kimdinh1412</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="search py-2 px-2">
+                        <i class="ri-search-line"></i>
+                        <input type="text" name="search" id="search_product" placeholder="Freeship đến 30k"
+                            class="ms-1">
+                        <a href="#!">Tìm kiếm</a>
+                    </div>
+                </div>
+                <div class="col-3 ps-2-xl d-flex justify-content-around wrap-more">
+                    <div class="home">
+                        <i class="ri-home-5-line"></i>
+                        <a href="index.html">Trang chủ</a>
+                    </div>
+                    <div class="user">
+                        <i class="ri-user-smile-line"></i>
+                        <a href="#!">Kimdinh1412</a>
+                    </div>
+                </div>
+                <div class="col-xl-1 col-1">
+                    <a href="cart.html">
+                        <div class="cart text-center">
+                            <i class="ri-shopping-cart-line">
+                                <span class="d-flex justify-content-center align-items-center">0</span>
+                            </i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="margin mt-5">
+        <div class="container">
+            <div style="display: flex;">
+            <img style="width: 99px;" src="img/Logo.png" alt="">
+            <h1 class="d-flex align-items-center">Giỏ Hàng</h1>
+        </div>
+            <div class="sanpham">
+                <div class="con">
+                    <img class="sanpham-img" src="img/Giay/giay1-1.695.jpg" alt="giay1">
+                    <div class="ten">Giày leo núi cổ cao Clorts Trekking Shoes 3B049A</div>
+                </div>
+        
+                <div class="phanloai">
+                    <p>Phân loại hàng: Giày Leo Núi</p>
+                    <p>Size: 44</p>
+                </div>
+                <div id="dongia1">$150</div>
+                <div class="soluong">
+                    <button id="bot1">-</button>
+                    <div id="luong1">1</div>
+                    <button id="them1">+</button>
+                </div>
+                <div class=""> 
+                    <div  class="fw-bold">TỔNG GIÁ</div>
+                    <div id="tonggia1">$150</div>
+                </div>
+            </div>
+            <button class="nut">Sử dụng voucher</button>
+            <div class="sanpham">
+                <div class="con">
+                    <img class="sanpham-img" src="img/Giay/giay1-1.695.jpg" alt="Anh san pham">
+                    <div class="ten">Giày leo núi cổ cao Clorts Trekking Shoes 3B049A</div>
+                </div>
+        
+                <div class="phanloai">
+                    <p>Phân loại hàng: Giày Leo Núi</p>
+                    <p>Size: 44</p>
+                </div>
+                <div id="dongia2">$200</div>
+                <div class="soluong">
+                    <button id="bot2">-</button>
+                    <div id="luong2">1</div>
+                    <button id="them2">+</button>
+                </div>
+                <div class=""> 
+                    <div class="fw-bold">TỔNG GIÁ</div>
+                    <div id="tonggia2">$200</div>
+                </div>
+            </div>
+            <button class="nut">Sử dụng voucher</button>
+
+
+
+
+             <div class="cart-container">
+       
+        <div class="payment-section">
+            <div class="payment-method">
+                <span>Phương Thức Thanh Toán</span>
+                <button class="payment-btn">COD</button>
+                <button class="payment-btn">MOMO</button>
+                <button class="payment-btn">Bank</button>
+            </div>
+        </div>
+        <div class="cart-summary">
+            <span>Tổng thanh toán: </span>
+            <div class="tong" id="TongGiaSP">$100</div>
+            <script src="script.js"></script>
+
+            <a href="sucess.html">
+            <button class="buy-btn">Mua Hàng</button>
+        </a>
+        </div>
+    </div>
+
+
+
+
+
+
+            <script src="cart.js"></script>
+            
+        </div>
+    </main>
+</body>
+
+</html>

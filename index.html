@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phượt Việt - Hãy Phượt theo cách của bạn!</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <!-- <script src="cart.html"></script> -->
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+
+<body class="m-0 p-0 ">
+    <header>
+        <div class="container wrap">
+            <div class="row d-flex align-items-center">
+                <div class="col-lg-1 col-2 d-none d-md-block">
+                    <a href="index.html">
+                        <img src="img/Logo.png" alt="logo" class="logo">
+                    </a>
+                </div>
+                <div class="col-2 d-block d-md-none" style=" text-align: center;">
+                    <a href="index.html" style="color: #eeffcb; font-size: 1.6rem;">
+                        <i class="ri-arrow-left-s-line"></i>
+                    </a>
+                </div>
+                <div class="col-1 bar">
+                    <label for="open">
+                        <i class="ri-menu-line"></i>
+                    </label>
+                    <input type="checkbox" id="open" hidden>
+                    <div class="wrap_more">
+                        <div class="home">
+                            <i class="ri-home-5-line"></i>
+                            <a href="index.html">Trang chủ</a>
+                        </div>
+                        <div class="user">
+                            <i class="fa-solid fa-circle"></i>
+                            <a href="#!">Kimdinh1412</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7 pe-1">
+                    <div class="search p-2">
+                        <button type="button" id="button-addon" class="px-2 bg-white">
+                            <i class="ri-search-line"></i>
+                        </button>
+                        <input type="text" name="search" aria-describedby="button-addon" id="search_product"
+                            placeholder="Freeship đến 30k" class="ms-1">
+                        <a href="#!" class="d-none d-md-inline-block">Tìm kiếm</a>
+                    </div>
+                </div>
+                <div class="col-3 ps-2-xl d-flex justify-content-around wrap-more">
+                    <div class="home">
+                        <i class="ri-home-5-line"></i>
+                        <a href="index.html">Trang chủ</a>
+                    </div>
+                    <div class="user">
+                        <i class="ri-user-smile-line"></i>
+                        <a href="#!">Kimdinh1412</a>
+                    </div>
+                </div>
+                <div class="col-xl-1 col-1">
+                    <a href="cart.html">
+                        <div class="cart text-center">
+                            <i class="ri-shopping-cart-line">
+                                <span
+                                    class="d-flex justify-content-center align-items-center d-none d-md-inline-block">0</span>
+                            </i>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="d-block d-md-none bg-white w-100 py-3 list">
+        <div class="d-flex justify-content-between">
+            <a class="text-decoration-none fz" href="">Phổ biến</a>
+            <a class="text-decoration-none fz dot text-black" href="">Bán chạy</a>
+            <a class="text-decoration-none fz dot text-black" href="">Hàng mới</a>
+            <div>
+                <a class="text-decoration-none fz dot text-black" href="">Giá</a>
+                <i class="ri-arrow-up-down-line"></i>
+            </div>
+        </div>
+    </div>
+    <div class="d-block d-md-none bg-white w-100 border-top py-2 rounded-bottom">
+        <div class="d-flex container">
+            <img src="loc.png" class="loc" alt="">
+            <p class="m-0 border-end mt-1 fz px-2">Lọc</p>
+            <img src="now.png" class="now" alt="">
+        </div>
+    </div>
+    <main class="margin">
+        <div class=" d-none d-md-block text-center pb-2 container ps-0">
+            <div class="d-flex">
+                <p class="text-black-50 m-0">Trang chủ</p>
+                <i class="ri-arrow-drop-right-line "></i>
+                <p class="m-0">New Arrival</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row gap-2">
+                <div class="col-2 d-none d-md-block mt-2 py-2 rounded bg-white" style="height: max-content;">
+                    <div class="p-1 container">
+                        <h6 class="py-3 fw-bold">DANH MỤC SẢN PHẨM</h6>
+                        <ul class="list-unstyled d-flex flex-column gap-2">
+                            <li><a class="text-black text-decoration-none" href="#!">Giày Leo Núi</a></li>
+                            <li><a class="text-black text-decoration-none" href="#!">Quần</a></li>
+                            <li><a class="text-black text-decoration-none" href="#!">Áo Khoác Gió</a></li>
+                            <li><a class="text-black text-decoration-none" href="#!">Găng Tay</a></li>
+                            <li><a class="text-black text-decoration-none" href="#!">Balo</a></li>
+                        </ul>
+                    </div>
+                    <div class="border-top">
+                        <div class="p-1">
+                            <h6 class="py-3 fw-bold">THƯƠNG HIỆU</h6>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1">Clorst</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck2">
+                                        <label class="form-check-label" for="exampleCheck2">Gothiar</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck3">
+                                        <label class="form-check-label" for="exampleCheck3">Goodfit</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck4">
+                                        <label class="form-check-label" for="exampleCheck4">Ryder</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck5">
+                                        <label class="form-check-label" for="exampleCheck5">Senterlan</label>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="mb-3 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck5">
+                                        <label class="form-check-label" for="exampleCheck5">Ktom</label>
+                                    </div>
+                                </li>
+                            
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle text-primary" href="#!" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Xem thêm
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#!">Các thương hiệu khác</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="border-top">
+                        <div>
+                            <h6 class="py-3 m-0">Đánh giá</h6>
+                            <div class="d-flex flex-column gap-2">
+                                <ul class="list-unstyled d-flex m-0">
+                                    <li><img class="height" src="star.png" alt=""></li>
+                                    <li><img class="height" src="star.png" alt=""></li>
+                                    <li><img class="height" src="star.png" alt=""></li>
+                                    <li><img class="height" src="star.png" alt=""></li>
+                                    <li><img class="height" src="star.png" alt=""></li>
+                                    <p class="ps-1 m-0">từ 5 sao</p>
+                                </ul>
+                                <ul class="list-unstyled d-flex m-0">
+                                    <li><img class="height" src="star.png" alt=""></li>
+                                    <li><img class="height" src="star.png" alt=""></li>
+                                    <li><img class="height" src="star.png" alt=""></li>
+                                    <li><img class="height" src="star.png" alt=""></li>
+                                    <li><img class="height" src="star2.png" alt=""></li>
+                                    <p class="ps-1 m-0">từ 4 sao</p>
+                                </ul>
+                                <ul class="list-unstyled d-flex m-0">
+                                    <li><img class="height" src="star.png" alt=""></li>
+                                    <li><img class="height" src="star.png" alt=""></li>
+                                    <li><img class="height" src="star.png" alt=""></li>
+                                    <li><img class="height" src="star2.png" alt=""></li>
+                                    <li><img class="height" src="star2.png" alt=""></li>
+                                    <p class="ps-1 m-0">từ 3 sao</p>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col rounded mt-2" id="body">
+                    <div class="container">
+                        <div class="row gap-2 mb-3 d-flex justify-content-between">
+                            <div class="col-lg-20  bg-white px-0 rounded">
+                                <a href="product1.html">
+                                    <div class="home_product_item rounded">
+                                        <div class="home_product_item_img">
+                                            <img src="img/Giay/giay1-1.695.jpg" class="rounded">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h5 class="fw-bold text-dark text-center">CLORTS</h5>
+                                                <h6 class="">Giày leo núi cổ cao Clorts Trekking Shoes 3B049A</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star2.png" alt=""></li>
+                                                    <li><img class="height" src="star2.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">Đã bán 120</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-0 mb-4">
+                                                <p class="me-3 mt-5">1.695.000<span
+                                                        style="vertical-align: super; font-size: 15px;">đ</span>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <img src="now.png" class="now mt-2 d-block d-sm-none"
+                                                    style="height: 20px; width: 40px;" alt="">
+                                                <p class=" mb-0 py-1 mt-2">Hàng có sẵn</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20  bg-white px-0 rounded d-sm-none d-block">
+                                <a href="#!">
+                                    <div class="home_product_item ">
+                                        <div class="home_product_item_img">
+                                            <img src="productbonus.png" class="rounded">
+
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h6>Chinh Phục Luyện Thi Vào 10 Môn Toán Theo Chủ Đề</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 275</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-4 mb-4">
+                                                <p class="me-3 mb-0">95.500<span
+                                                        style="vertical-align: super; font-size: 15px;">đ</span>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <p class=" mb-0 py-1 mt-2">Giao thứ 5, 01/02</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20  bg-white px-0 rounded d-none d-sm-block">
+                                <a href="#!">
+                                    <div class="home_product_item rounded">
+                                        <div class="home_product_item_img">
+                                            <img src="img/Giay/giay2-1.695.jpg" class="rounded">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h5 class="fw-bold text-dark text-center">CLORTS</h5>
+                                                <h6>Giày leo núi cổ cao Clorts Trekking Shoes 3B049E</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="/star2.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 907</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-0 mb-4">
+                                                <p class="me-3 mt-5">1.695.000<span
+                                                        style="vertical-align: super; font-size: 15px;">đ</span>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <img src="now.png" class="now mt-2 d-block d-sm-none"
+                                                    style="height: 20px; width: 40px;" alt="">
+                                                <p class=" mb-0 py-1 mt-2">Hàng có sẵn</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20  bg-white px-0 d-none rounded d-sm-block">
+                                <a href="#!">
+                                    <div class="home_product_item rounded">
+                                        <div class="home_product_item_img">
+                                            <img src="img/Giay/giay3-1.495.jpg" class="rounded">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h5 class="fw-bold text-dark text-center">CLORTS</h5>
+                                                <h6>Giày leo núi cổ thấp Clorts Trekking Shoes 3D033E</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">Đã bán 21</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-3 mb-3">
+                                                <p class="d-flex mb-0;">
+                                                    <s class="pt-4" style="font-size: 13px">1.495.000 <span style="vertical-align: super; font-size: 13px;">đ</span></s>
+                                                    <span class="text-danger fs-5">-20%</span>
+                                                </p>
+                                                <p class="me-3 mb-0">1.356.000<span
+                                                    style="vertical-align: super; font-size: 15px;">đ</span></p>
+                                            </div>
+                                            <div class="d-flex ship pb-1">
+                                                <!-- <img src="now.png" class="now mt-1 d-block d-sm-none"
+                                                    style="height: 15px; width: 35px;" alt=""> -->
+                                                <p class=" mb-0 pb-0 pt-1 mt-2">Hàng có sẵn</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20  bg-white px-0 rounded d-none d-sm-block">
+                                <a href="#!">
+                                    <div class="home_product_item rounded">
+                                        <div class="home_product_item_img">
+                                            <img src="img/Giay/giay4-1.775.jpg" class="rounded">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h5 class="fw-bold text-dark text-center">CLORTS</h5>
+                                                <h6>Giày leo núi cổ cao Clorts Trekking Shoes 3B052A</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="/star2.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 90</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-3 mb-3">
+                                                <p class="me-3 mb-0">1.755.000<span
+                                                        style="vertical-align: super; font-size: 15px;">đ</span>
+                                                </p>
+                                                <!-- <span>-26%</span> -->
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <!-- <img src="now.png" class="now mt-1 d-block d-sm-none"
+                                                    style="height: 15px; width: 35px;" alt=""> -->
+                                                <p class=" mb-0 pb-0 pt-1 mt-2 ">Hàng order</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20  bg-white px-0 rounded d-none d-sm-block">
+                                <a href="#!">
+                                    <div class="home_product_item rounded">
+                                        <div class="home_product_item_img">
+                                            <img src="img/Giay/giay5-1.695.jpg" class="rounded">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-3">
+                                                <h5 class="fw-bold text-dark text-center">CLORTS</h5>
+                                                <h6>Giày leo núi cổ cao Clorts Trekking Shoes 3B049F</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 109</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-3 mb-3">
+                                                <p class="d-flex mb-0"><s class="pt-4" style="font-size: 13px">1.495.000 <span style="vertical-align: super; font-size: 13px;">đ</span></s>
+                                                    <span class="text-danger fs-5">-10%</span>
+                                                </p>
+                                                <p class="me-3 mb-0">1.345.000<span
+                                                    style="vertical-align: super; font-size: 15px;">đ</span></p>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <img src="now.png" class="now mt-1 d-block d-sm-none"
+                                                    style="height: 15px; width: 35px;" alt="">
+                                                <p class=" mb-0 py-1">Hàng có sẵn</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-lg-20  bg-white px-0 rounded">
+                                <a href="#!">
+                                    <div class="home_product_item ">
+                                        <div class="home_product_item_img">
+                                            <img src="img/Quan/quan1.jpg" class="rounded">
+                                            <img src="real.png" class="img_real mt-1 d-sm-none d-block" alt="">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h5 class="fw-bold text-dark text-center">GOTHIAR</h5>
+                                                <h6>Quần siêu nhẹ Gothiar active Quick Dry</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex mt-3 m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="/star2.png" alt=""></li>
+                                                    <li><img class="height" src="/star2.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 500</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-4 mb-4">
+                                                <p class="me-3 mb-0">425.000<span
+                                                        style="vertical-align: super; font-size: 15px;">đ</span>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <img src="now.png" class="now mt-2 d-block d-sm-none"
+                                                    style="height: 20px; width: 40px;" alt="">
+                                                <p class=" mb-0 mt-1 py-1">Hàng có sẵn</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            
+                            <div class="col-lg-20  bg-white px-0 rounded">
+                                <a href="#!">
+                                    <div class="home_product_item ">
+                                        <div class="home_product_item_img">
+                                            <img src="IMG/Quan/quan2.jpg" class="rounded">
+                                            <img src="real.png" class="img_real mt-1 d-sm-none d-block" alt="">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h5 class="fw-bold text-dark text-center">GOTHIAR</h5>
+                                                <h6>Quần mau khô nối ống FM Gothiar Active Convertible</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 142</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-4 mb-4">
+                                                <p class="me-3 mb-0">455.000<span
+                                                        style="vertical-align: super; font-size: 15px;">đ</span>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <img src="now.png" class="now mt-2 d-block d-sm-none"
+                                                    style="height: 20px; width: 40px;" alt="">
+                                                <p class=" mb-0 py-1 mt-1">Hàng có sẵn</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20  bg-white px-0 rounded">
+                                <a href="#!">
+                                    <div class="home_product_item ">
+                                        <div class="home_product_item_img">
+                                            <img src="IMG/Quan/quan3.jpg" class="rounded">
+                                            <img src="real.png" class="img_real mt-1 d-sm-none d-block" alt="">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h5 class="fw-bold text-dark text-center">GOTHIAR</h5>
+                                                <h6>Quần mau khô nữ Gothiar Quick Dry</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="/star2.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 264</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-4 mb-4">
+                                                <p class="me-3 mb-0">599.000<span
+                                                        style="vertical-align: super; font-size: 15px;">đ</span>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <img src="now.png" class="now mt-2 d-block d-sm-none"
+                                                    style="height: 20px; width: 40px;" alt="">
+                                                <p class=" mb-0 py-1 mt-1">Hàng có sẵn</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20  bg-white px-0 rounded d-sm-none d-block">
+                                <a href="#!">
+                                    <div class="home_product_item ">
+                                        <div class="home_product_item_img">
+                                            <img src="ethon.png" class="rounded">
+                                            <img src="real.png" class="img_real " alt="">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h6>Ehon - Phát triển quan sát -
+                                                    Cửa hàng bánh mì quạ - cho
+                                                    bé 3-6 tuổi</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 178</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-4 mb-4">
+                                                <p class="me-3 mb-0">43.300<span
+                                                        style="vertical-align: super; font-size: 15px;">đ</span>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <p class=" mb-0 py-1 mt-2">Hàng có sẵn</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20  bg-white px-0 rounded">
+                                <a href="#!">
+                                    <div class="home_product_item ">
+                                        <div class="home_product_item_img">
+                                            <img src="IMG/Quan/quan4.jpg" class="rounded">
+                                            <img src="real.png" class="img_real mt-1 d-sm-none d-block" alt="">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h5 class="fw-bold text-dark text-center">GOTHIAR</h5>
+                                                <h6>Quần mau khô nữ Gothiar - Xanh dương</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 595</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-4 mb-4">
+                                                <p class="d-flex mb-0"> <s class="pt-4" style="font-size: 13px">795.000 <span style="vertical-align: super; font-size: 13px;">đ</span></s>
+                                                    <span class="text-danger fs-5">-10%</span>
+                                                </p>
+                                                <p class="me-3 mb-0">715.500<span
+                                                    style="vertical-align: super; font-size: 15px;">đ</span></p>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <img src="now.png" class="now mt-2 d-block d-sm-none"
+                                                    style="height: 20px; width: 40px;" alt="">
+                                                <p class=" mb-0 py-1 mt-1">Hàng có sẵn</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20 bg-white px-0 rounded">
+                                <a href="#!">
+                                    <div class="home_product_item ">
+                                        <div class="home_product_item_img">
+                                            <img src="IMG/Quan/quan5.png" class="rounded">
+                                            <img src="real.png" class="img_real mt-1 d-sm-none d-block" alt="">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h5 class="fw-bold text-dark text-center">KTOM</h5>
+                                                <h6>Quần mau khô nối ống Ktom K114 - 9509</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 110</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-4 mb-4">
+                                                <p class="me-3 mb-0">495.000<span
+                                                        style="vertical-align: super; font-size: 15px;">đ</span>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <img src="now.png" class="now mt-2 d-block d-sm-none"
+                                                    style="height: 20px; width: 40px;" alt="">
+                                                <p class=" mb-0 py-1 mt-1">Hàng có sẵn</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20  bg-white px-0 rounded d-none d-sm-block"
+                                style="height: max-content;">
+                                <a href="#!">
+                                    <div class="home_product_item ">
+                                        <div class="home_product_item_img">
+                                            <img src="img/Aokhoac/aokhoac1.jpg" class="rounded">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h5 class="fw-bold text-dark text-center">GOTHIAR</h5>
+                                                <h6>Áo khoác gió 2 lớp nữ Gothiar Windproof Jacket Powerful</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 985</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-4 mb-4">
+                                                <p class="d-flex mb-0"><s class="pt-4" style="font-size: 13px">595.000<span style="vertical-align: super; font-size: 13px;">đ</span></s>
+                                                    <span class="text-danger fs-5">-35%</span>
+                                                </p>
+                                                <p class="me-3 mb-0">386.750<span
+                                                    style="vertical-align: super; font-size: 15px;">đ</span></p>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <!-- <img src="now.png" class="now mt-1 d-block d-sm-none"
+                                                    style="height: 15px; width: 35px;" alt=""> -->
+                                                <p class=" mb-0 py-1 mt-1">Hàng có sẵn</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20  bg-white px-0 rounded d-none d-sm-block"
+                                style="height: max-content;">
+                                <a href="#!">
+                                    <div class="home_product_item ">
+                                        <div class="home_product_item_img">
+                                            <img src="img/Aokhoac/aokhoac2.jpg" class="rounded">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h5 class="fw-bold text-dark text-center">GOTHIAR</h5>
+                                                <h6>Áo khoác gió 2 lớp nữ Gothiar Windproof Jacket Happiness</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 298</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-4 mb-4">
+                                                <p class="d-flex mb-0"><s class="pt-4" style="font-size: 13px">595.000<span style="vertical-align: super; font-size: 13px;">đ</span></s>
+                                                    <span class="text-danger fs-5">-20%</span>
+                                                </p>
+                                                <p class="me-3 mb-0">476.000<span
+                                                    style="vertical-align: super; font-size: 15px;">đ</span></p>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <!-- <img src="now.png" class="now mt-1 d-block d-sm-none"
+                                                    style="height: 15px; width: 35px;" alt=""> -->
+                                                <p class=" mb-0 py-1 mt-1">Hàng có sẵn</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20 bg-white px-0 rounded" style="height: max-content;">
+                                <a href="#!">
+                                    <div class="home_product_item ">
+                                        <div class="home_product_item_img">
+                                            <img src="img/Aokhoac/aokhoac3.jpg" class="rounded">
+                                            <img src="real.png" class="img_real mt-1 d-sm-none d-block" alt="">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h5 class="fw-bold text-dark text-center">GOTHIAR</h5>
+                                                <h6>Áo khoác gió 2 lớp nam Gothiar Luxury</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star2.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 300</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-4 mb-4">
+                                                <p class="d-flex mb-0"><s class="pt-4" style="font-size: 13px">595.000<span style="vertical-align: super; font-size: 13px;">đ</span></s>
+                                                    <span class="text-danger fs-5">-20%</span>
+                                                </p>
+                                                <p class="me-3 mb-0">476.000<span
+                                                    style="vertical-align: super; font-size: 15px;">đ</span></p>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <img src="now.png" class="now mt-2 d-block d-sm-none"
+                                                    style="height: 20px; width: 40px;" alt="">
+                                                <p class=" mb-0 py-1 mt-1">Hàng có sẵn</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20  bg-white px-0 rounded d-sm-none d-block">
+                                <a href="#!">
+                                    <div class="home_product_item ">
+                                        <div class="home_product_item_img">
+                                            <img src="ehon.png" class="rounded">
+                                            <img src="real.png" class="img_real mt-1 d-sm-none d-block" alt="">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h6>Ehon - Phát triển sáng tạo -
+                                                    Gà Con Chạy Trốn - Cho bé
+                                                    3-6 tuổi</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 325</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-4 mb-4">
+                                                <p class="me-3 mb-0">24.650<span
+                                                        style="vertical-align: super; font-size: 15px;">đ</span>
+                                                </p>
+                                                <span class="">-15%</span>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <img src="now.png" class="now mt-2 d-block d-sm-none"
+                                                    style="height: 20px; width: 40px;" alt="">
+                                                <p class=" mb-0 py-1 mt-2">Giao thứ 5, 01/02</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20  bg-white px-0 rounded" style="height: max-content;">
+                                <a href="#!">
+                                    <div class="home_product_item ">
+                                        <div class="home_product_item_img">
+                                            <img src="img/Aokhoac/aokhoac4.jpg" class="rounded">
+                                            <img src="real.png" class="img_real mt-1 d-sm-none d-block" alt="">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h5 class="fw-bold text-dark text-center">GOTHIAR</h5>
+                                                <h6>Áo khoác gió 2 lớp nam Gothiar Creative</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 936</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-4 mb-4">
+                                                <p class="d-flex mb-0"><s class="pt-4" style="font-size: 13px">595.000<span style="vertical-align: super; font-size: 13px;">đ</span></s>
+                                                    <span class="text-danger fs-5">-20%</span>
+                                                </p>
+                                                <p class="me-3 mb-0">476.000<span
+                                                    style="vertical-align: super; font-size: 15px;">đ</span></p>
+                                                
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <img src="now.png" class="now mt-2 d-block d-sm-none"
+                                                    style="height: 20px; width: 40px;" alt="">
+                                                <p class=" mb-0 py-1 mt-1">Hàng có sẵn</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20  bg-white px-0 rounded" style="height: max-content;">
+                                <a href="#!">
+                                    <div class="home_product_item ">
+                                        <div class="home_product_item_img">
+                                            <img src="img/Aokhoac/aokhoac5.jpg" class="rounded">
+                                            <img src="real.png" class="img_real mt-1 d-sm-none d-block" alt="">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h5 class="fw-bold text-dark text-center">GOTHIAR</h5>
+                                                <h6>Áo khoác gió 2 lớp nam Gothiar Popular</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="/star2.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 654</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-4 mb-4">
+                                                <p class="d-flex mb-0"><s class="pt-4" style="font-size: 13px">595.000<span style="vertical-align: super; font-size: 13px;">đ</span></s>
+                                                    <span class="text-danger fs-5">-20%</span>
+                                                </p>
+                                                <p class="me-3 mb-0">476.000<span
+                                                    style="vertical-align: super; font-size: 15px;">đ</span></p>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <img src="now.png" class="now mt-2 d-block d-sm-none"
+                                                    style="height: 20px; width: 40px;" alt="">
+                                                <p class=" mb-0 py-1 mt-1">Giao siêu tốc 2h</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20  bg-white px-0 rounded" style="height: max-content;">
+                                <a href="#!">
+                                    <div class="home_product_item ">
+                                        <div class="home_product_item_img">
+                                            <img src="img/Gangtay/gangtay1.jpg" class="rounded">
+                                            <img src="real.png" class="img_real mt-1 d-sm-none d-block" alt="">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h5 class="fw-bold text-dark text-center">GOODFIT</h5>
+                                                <h6>Găng tay thể thao Goodfit GF202G</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 96</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-4 mb-4">
+                                                <p class="me-3 mt-3 mb-0">79.000 <span
+                                                        style="vertical-align: super; font-size: 15px;">đ</span>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <img src="now.png" class="now mt-2 d-block d-sm-none"
+                                                    style="height: 20px; width: 40px;" alt="">
+                                                <p class=" mb-0 py-1 mt-1">Hàng có sẵn</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20  bg-white px-0 rounded d-sm-none d-block">
+                                <a href="#!">
+                                    <div class="home_product_item ">
+                                        <div class="home_product_item_img">
+                                            <img src="img/Gangtay/gangtay2.jpg" class="rounded">
+                                            <img src="real.png" class="img_real " alt="">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h6>Một Thoáng Ta Rực Rỡ Ở
+                                                    Nhân Gian</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 99</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-4 mb-4">
+                                                <p class="me-3 mb-0">119.350<span
+                                                        style="vertical-align: super; font-size: 15px;">đ</span>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <p class=" mb-0 py-1 mt-2">Giao thứ 4, 31/01</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20  bg-white px-0 rounded" style="height: max-content;">
+                                <a href="#!">
+                                    <div class="home_product_item ">
+                                        <div class="home_product_item_img">
+                                            <img src="img/Gangtay/gangtay2.jpg" class="rounded">
+                                            <img src="real.png" class="img_real mt-1 d-sm-none d-block" alt="">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h5 class="fw-bold text-dark text-center">CLORTS</h5>
+                                                <h6>Goodfit Sport Gloves GF203G</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star2.png" alt=""></li>
+                                                    <li><img class="height" src="star2.png" alt=""></li>
+                                                    <li><img class="height" src="star2.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 45</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-4 mb-4">
+                                                <p class="me-3 mb-0">250.000<span
+                                                        style="vertical-align: super; font-size: 15px;">đ</span>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <img src="now.png" class="now mt-2 d-block d-sm-none"
+                                                    style="height: 20px; width: 40px;" alt="">
+                                                <p class=" mb-0 py-1 mt-1">Hàng có sẵn</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20  bg-white px-0 rounded" style="height: max-content;">
+                                <a href="#!">
+                                    <div class="home_product_item ">
+                                        <div class="home_product_item_img">
+                                            <img src="img/Gangtay/gangtay3.jpg" class="rounded">
+                                            <img src="real.png" class="img_real mt-1 d-sm-none d-block" alt="">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h5 class="fw-bold text-dark text-center">GOODFIT</h5>
+                                                <h6>Găng tay chống nắng Let's Slim - 7838</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 1k+</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-4 mb-4">
+                                                <p class="me-3 mb-0">59.000<span
+                                                        style="vertical-align: super; font-size: 15px;">đ</span>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <img src="now.png" class="now mt-2 d-block d-sm-none"
+                                                    style="height: 20px; width: 40px;" alt="">
+                                                <p class=" mb-0 py-1 mt-1">Hàng có sẵn</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20  bg-white px-0 rounded" style="height: max-content;">
+                                <a href="#!">
+                                    <div class="home_product_item ">
+                                        <div class="home_product_item_img">
+                                            <img src="img/Balo/balo1.jpg" class="rounded">
+                                            <img src="real.png" class="img_real mt-1 d-sm-none d-block" alt="">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h5 class="fw-bold text-dark text-center">SENTERLAN</h5>
+                                                <h6>Balo leo núi 25L Senterlan Speed Air S8358</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 432</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-4 mb-4">
+                                                <div class="d-flex">
+                                                    <p class="me-3 mb-0">595.000<span
+                                                            style="vertical-align: super; font-size: 15px;">đ</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="home_product_item_price d-flex mt-4 mb-4 d-block d-sm-none">
+                                                <p class="me-3 mb-0">101.000<span
+                                                        style="vertical-align: super; font-size: 15px;">đ</span>
+                                                </p>
+                                                <span>-25%</span>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <img src="now.png" class="now mt-2 d-block d-sm-none"
+                                                    style="height: 20px; width: 40px;" alt="">
+                                                <p class=" mb-0 py-1 mt-1">Hàng order</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20  bg-white px-0 rounded d-none d-sm-block"
+                                style="height: max-content;">
+                                <a href="#!">
+                                    <div class="home_product_item ">
+                                        <div class="home_product_item_img">
+                                            <img src="img/Balo/balo2.jpg" class="rounded">
+                                            <img src="real.png" class="img_real mt-1 d-sm-none d-block" alt="">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h5 class="fw-bold text-dark text-center">SENTERLAN</h5>
+                                                <h6>Balo du lịch gấp gọn 20L Senterlan S2212</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 985</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-4 mb-4">
+                                                <p class="me-3 mb-0">465.000<span
+                                                        style="vertical-align: super; font-size: 15px;">đ</span>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <img src="now.png" class="now mt-2 d-block d-sm-none"
+                                                    style="height: 20px; width: 40px;" alt="">
+                                                <p class=" mb-0 py-1 mt-1">Hàng order</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20  bg-white px-0 rounded" style="height: max-content;">
+                                <a href="#!">
+                                    <div class="home_product_item ">
+                                        <div class="home_product_item_img">
+                                            <img src="img/Balo/balo3.jpg" class="rounded">
+                                            <img src="real.png" class="img_real mt-1 d-sm-none d-block" alt="">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h5 class="fw-bold text-dark text-center">SENTERLAN</h5>
+                                                <h6>Balo leo núi 32L Senterlan Adventure S2128 - 8494 Đỏ</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star2.png" alt=""></li>
+                                                    <p class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">Đã bán 123</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-0 mb-4">
+                                                <p class="me-3 mt-3 mb-0"> 1.135.000<span
+                                                        style="vertical-align: super; font-size: 15px;">đ</span>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <img src="now.png" class="now mt-2 d-block d-sm-none"
+                                                    style="height: 20px; width: 40px;" alt="">
+                                                <p class=" mb-0 py-1 mt-1">Hàng order</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20  bg-white px-0 rounded d-sm-none d-block">
+                                <a href="#!">
+                                    <div class="home_product_item ">
+                                        <div class="home_product_item_img">
+                                            <img src="product18.png" class="rounded">
+                                            <img src="real.png" class="img_real " alt="">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h6>Một Thoáng Ta Rực Rỡ Ở
+                                                    Nhân Gian</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 99</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-0 mb-4">
+                                                <p class="me-3 mb-0">119.350<span
+                                                        style="vertical-align: super; font-size: 15px;">đ</span>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <p class=" mb-0 py-1 mt-2">Giao thứ 4, 31/01</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20  bg-white px-0 rounded" style="height: max-content;">
+                                <a href="#!">
+                                    <div class="home_product_item ">
+                                        <div class="home_product_item_img">
+                                            <img src="img/Balo/balo4.jpg" class="rounded">
+                                            <img src="real.png" class="img_real mt-1 d-sm-none d-block" alt="">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h5 class="fw-bold text-dark text-center">SENTERLAN</h5>
+                                                <h6>Balo leo núi 35L Senterlan Adventure S2908</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 498</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-4 mb-4">
+                                                <p class="me-3 mb-0">1.495.000<span
+                                                        style="vertical-align: super; font-size: 15px;">đ</span>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <img src="now.png" class="now mt-2 d-block d-sm-none"
+                                                    style="height: 20px; width: 40px;" alt="">
+                                                <p class=" mb-0 py-1 mt-1">Hàng order</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20  bg-white px-0 rounded" style="height: max-content;">
+                                <a href="#!">
+                                    <div class="home_product_item ">
+                                        <div class="home_product_item_img">
+                                            <img src="img/Balo/balo5.jpg" class="rounded">
+                                            <img src="real.png" class="img_real mt-1 d-sm-none d-block" alt="">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h5 class="fw-bold text-dark text-center">SENTERLAN</h5>
+                                                <h6>Balo dã ngoại 20L Senterlan Outdoor S2686</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star2.png" alt=""></li>
+                                                    <li><img class="height" src="star2.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 864</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-4 mb-4">
+                                                <p class="me-3 mb-0">465.000<span
+                                                        style="vertical-align: super; font-size: 15px;">đ</span>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <img src="now.png" class="now mt-2 d-block d-sm-none"
+                                                    style="height: 20px; width: 40px;" alt="">
+                                                <p class=" mb-0 py-1 mt-1">Hàng order</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20  bg-white px-0 rounded" style="height: max-content;">
+                                <a href="#!">
+                                    <div class="home_product_item ">
+                                        <div class="home_product_item_img">
+                                            <img src="img/Balo/balo6.jpg" class="rounded">
+                                            <img src="real.png" class="img_real mt-1 d-sm-none d-block" alt="">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h5 class="fw-bold text-dark text-center">SENTERLAN</h5>
+                                                <h6>Balo leo núi 20L Senterlan S2067</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 323</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-4 mb-4 d-sm-block d-none">
+                                                <div class="d-flex">
+                                                    <p class="me-3 mb-2">855.000<span
+                                                            style="vertical-align: super; font-size: 15px;">đ</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="home_product_item_price d-flex mt-4 mb-4 d-block d-sm-none">
+                                                <p class="me-3 mb-0">101.000<span
+                                                        style="vertical-align: super; font-size: 15px;">đ</span>
+                                                </p>
+                                                <span>-25%</span>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <img src="now.png" class="now mt-2 d-block d-sm-none"
+                                                    style="height: 20px; width: 40px;" alt="">
+                                                <p class=" mb-0 py-1 mt-1">Hàng order</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-lg-20  bg-white px-0 rounded d-none d-sm-block"
+                                style="height: max-content;">
+                                <a href="#!">
+                                    <div class="home_product_item ">
+                                        <div class="home_product_item_img">
+                                            <img src="IMG/Balo/balo7.jpg" class="rounded">
+                                            <img src="real.png" class="img_real mt-1 d-sm-none d-block" alt="">
+                                        </div>
+                                        <div class="p-2">
+                                            <div class="home_product_item_name mt-4">
+                                                <h5 class="fw-bold text-dark text-center">SENTERLAN</h5>
+                                                <h6>Balo leo núi 35L Senterlan Aeon 3S S8205</h6>
+                                            </div>
+                                            <div class="">
+                                                <ul class="list-unstyled d-flex m-0">
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star.png" alt=""></li>
+                                                    <li><img class="height" src="star2.png" alt=""></li>
+                                                    <p
+                                                        class="d-flex flex-column justify-content-center fs ps-2 m-0 text-black-50">
+                                                        Đã bán 212</p>
+                                                </ul>
+                                            </div>
+                                            <div class="home_product_item_price mt-4 mb-4">
+                                                <p class="me-3 mb-0">945.000<span
+                                                        style="vertical-align: super; font-size: 15px;">đ</span>
+                                                </p>
+                                            </div>
+                                            <div class="d-flex ship">
+                                                <img src="now.png" class="now mt-2 d-block d-sm-none"
+                                                    style="height: 20px; width: 40px;" alt="">
+                                                <p class=" mb-0 py-1 mt-1">Hàng order</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div id="search-results"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="Voucherdoc">
+                    <img src="GIảm giá.png" alt="">
+                </div>
+            </div> 
+        </div>       
+    </main>
+    <nav class="d-lg-block d-none mt" aria-label="Page navigation example">
+        <ul class="d-flex justify-content-center list-unstyled gap-3 text-secondary">
+            <li class="page-item py-1 px-3 rounded" aria-current="page">
+                <a href="index.html" class="page-link">1</a>
+            </li>
+            <li class="page-item py-1 px-3 rounded"><a class="page-link" href="index2.html">2</a></li>
+            <li class="page-item py-1 px-3 rounded"><a class="page-link" href="#!">3</a></li>
+            <li class="page-item py-1 px-3 rounded"><a class="page-link" href="#!">4</a></li>
+            <li class="page-item py-1 px-3 rounded"><a class="page-link" href="#!">5</a></li>
+            <li class="page-item py-1 px-3 rounded"><a class="page-link" href="#!">...</a></li>
+            <li class="page-item py-1 px-3 rounded"><a class="page-link" href="#!">50</a></li>
+        </ul>
+    </nav>
+
+    <footer class=" d-none d-md-block m-4 rounded ">
+        <div class="container p-3 margin border-bottom">
+            <div class="row d-flex">
+                <div class="col">
+                    <h6 class="py-2">Hỗ trợ khách hàng</h6>
+                    <div class="text-secondary fs">
+                        <p class="m-0 mb-1">Hotline: <strong>1900-1009</strong><br>(1000đ/phút, 8-21h kể cả T7, CN)</p>
+                        <p class="m-0 mb-1">Các câu hỏi thường gặp</p>
+                        <p class="m-0 mb-1">Gửi yêu cầu hỗ trợ</p>
+                        <p class="m-0 mb-1">Hướng dẫn đặt hàng</p>
+                        <p class="m-0 mb-1">Phương thức vận chuyển</p>
+                        <p class="m-0 mb-1">Chính sách đổi trả</p>
+                        <p class="m-0 mb-1">Hướng dẫn trả góp</p>
+                        <p class="m-0 mb-1">Chính sách hàng nhập khẩu</p>
+                        <p class="m-0 mb-1">Hỗ trợ khách hàng: hotro@phuotviet.vn</p>
+                        <p class="m-0 mb-1">Báo lỗi bảo mật: sicurity@phuotviet.vn</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <h6 class="py-2">Về Phượt Việt</h6>
+                    <ul class="list-unstyled">
+                        <li><a class="fs text-secondary text-decoration-none" href="">Giới thiệu Phượt Việt</a></li>
+                        <li><a class="fs text-secondary text-decoration-none" href="">Phượt Việt Blog</a></li>
+                        <li><a class="fs text-secondary text-decoration-none" href="">Tuyển dụng</a></li>
+                        <li><a class="fs text-secondary text-decoration-none" href="">Chính sách bảo mật thanh toán</a>
+                        </li>
+                        <li><a class="fs text-secondary text-decoration-none" href="">Chính sách bảo mật thông tin</a>
+                        </li>
+                        <li><a class="fs text-secondary text-decoration-none" href="">Chính sách giải quyết khiếu
+                                nại</a></li>
+                        <li><a class="fs text-secondary text-decoration-none" href="">Điều khoản sử dụng</a></li>
+                        <li><a class="fs text-secondary text-decoration-none" href="">Giới thiệu Phượt Việt x Tổ Ong</a></li>
+                        <li><a class="fs text-secondary text-decoration-none" href="">Gói hội viên VIP</a></li>
+                        <li><a class="fs text-secondary text-decoration-none" href="">Tiếp thị liên kết</a>
+                        </li>
+                        <li><a class="fs text-secondary text-decoration-none" href="">Bán hàng doanh nghiệp</a></li>
+                        <li><a class="fs text-secondary text-decoration-none" href="">Điều kiện vận chuyển</a></li>
+                    </ul>
+                </div>
+                <div class="col p-0">
+                    <h6 class="py-2">Hợp tác và liên kết</h6>
+                    <ul class="list-unstyled">
+                        <li><a class="text-secondary text-decoration-none fs" href="">Quy chế hoạt động Sàn GDTMĐT</a>
+                        </li>
+                        <li><a class="text-secondary text-decoration-none fs" href="">Bán hàng cùng Phượt Việt</a></li>
+                    </ul>
+                    <div>
+                        <h6 class="py-2">Chứng nhận bởi</h6>
+                        <img class="w-50 ps-2" src="bim.png" alt="">
+                    </div>
+                </div>
+                <div class="col p-0 me-2">
+                    <h6 class="py-2">Phương thức thanh toán</h6>
+                    <h6 class="py-2">Dịch vụ giao hàng</h6>
+                </div>
+                <div class="col p-0">
+                    <div>
+                        <h6 class="py-2">Kết nối với chúng tôi</h6>
+                        <img class="w-50 ps-2" src="img/contactlogo.png!bw700" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-bottom margin2 container">
+            <div class=" py-3">
+                <h6 class="py-2">Công ty TNHH PHƯỢT VIỆT</h6>
+                <div class="text-secondary fs">
+                    <p>Địa chỉ trụ sở: Tòa nhà Viettel, Số 285, Đường Cách Mạng Tháng 8, Phường 12, Quận 10, Thành phố Hồ Chí Minh</p>
+                    <p>Giấy chứng nhận đăng ký doanh nghiệp số 0309532909 do Sở Kế Hoạch và Đầu Tư Thành phố Hồ Chí Minh
+                        cấp
+                        lần
+                        đầu vào ngày 06/01/2010</p>
+                    <p>Hotline: <a href="" class="text-decoration-none">1900 1009</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

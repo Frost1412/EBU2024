@@ -1,0 +1,432 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: Inter, san-serif;
+    transition: all .3s ease;
+}
+
+.col-lg-20 {
+    width: 19.2%;
+}
+
+.margin {
+    margin-inline: 8%;
+}
+
+.margin2 {
+    margin-left: 7%;
+    margin-right: 8%;
+}
+
+.fs {
+    font-size: 12px;
+}
+
+.mt {
+    margin-top: 70px;
+}
+
+.loc {
+    width: 24px;
+    height: 24px;
+}
+
+.now {
+    width: 60px;
+    height: 30px;
+}
+
+.pa {
+    padding: 8px 8px 8px 3px;
+}
+
+a {
+    text-decoration: none !important;
+    color: #808089;
+}
+
+img {
+    width: 100%;
+}
+
+header {
+    min-height: 65px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: #fff;
+    position: sticky;
+    top: 0;
+}
+footer {
+    background-color:rgb(255, 255, 255);
+    
+}
+body {
+    background-color:  #edffc6;
+}
+
+
+
+.list {
+    background-color: #fff;
+}
+
+.bar {
+    display: none;
+}
+
+.search {
+    border: 1px solid #808089;
+    border-radius: 5px;
+    position: relative;
+    color: #808089;
+}
+
+.search input,
+.search input::placeholder {
+    font-size: .9rem;
+}
+
+.search a {
+    display: inline-block;
+    text-decoration: none;
+    position: absolute;
+    right: 10px;
+    color: #0A68FF;
+    cursor: pointer;
+}
+
+.search a::before {
+    content: " ";
+    border: 1px solid #80808953;
+    height: 80%;
+    position: absolute;
+    top: 3px;
+    left: -15px;
+}
+
+.home i,
+.user i {
+    font-size: 20px;
+}
+
+.home a,
+.user a {
+    color: #808089
+}
+
+.home:hover,
+.user:hover {
+    opacity: .6;
+}
+
+.button:hover {
+    opacity: .6;
+}
+
+.cart {
+    position: relative;
+    cursor: pointer;
+}
+
+.cart::before {
+    content: " ";
+    border: 1px solid #80808953;
+    height: 80%;
+    position: absolute;
+    top: 3px;
+    left: 0;
+}
+
+.cart i {
+    color:#9fca45;
+    position: relative;
+}
+
+.cart span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    font-size: 10px;
+    position: absolute;
+    z-index: 9;
+    top: -15px;
+    left: 15px;
+}
+
+.d-flex .dot::before {
+    content: "•";
+    /* Ký tự dấu chấm */
+    margin-left: 10px;
+    color: gray;
+    opacity: 0.5;
+    padding-right: 20px;
+}
+
+
+.navbar-nav {
+    margin-left: 0px;
+}
+
+.home_product_item_name h6 {
+    color: #27272A;
+    margin-bottom: 0 !important;
+    font-size: 12px;
+}
+
+.home_product_item_price {
+    display: flex;
+    align-items: center;
+}
+
+.home_product_item_price span {
+    font-size: 12px;
+    color: #27272A;
+    font-weight: 500;
+    background-color: #F5F5FA;
+    padding: .2rem;
+    border-radius: 99px;
+}
+
+.ship {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #8080896f;
+    color: #808089;
+    font-size: 12px;
+}
+
+.item_robot {
+    width: 100%;
+    color: #808089;
+    font-size: 12px;
+}
+
+
+@media screen and (max-width: 992.98px) {
+    .bar {
+        display: block;
+        font-size: 25px;
+        position: relative;
+    }
+
+    .wrap-more {
+        display: none !important;
+    }
+
+    .wrap_more {
+        left: 0;
+        width: max-content;
+        padding: 1rem;
+        font-size: smaller;
+        position: absolute;
+        z-index: 999;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        top: 50px;
+        left: 10px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        display: none;
+    }
+
+    .wrap_more::after {
+        content: " ";
+        width: 20px;
+        height: 20px;
+        border: 10px solid #fff;
+        border-color: transparent transparent #fff transparent;
+        position: absolute;
+        top: -20px;
+        left: 2px;
+    }
+
+    .wrap_more .home {
+        margin-bottom: 1rem;
+    }
+
+    #open:checked~.wrap_more {
+        display: block;
+    }
+
+    .cart::before {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768.98px) {
+    .wrap 
+    {
+        height: 65px;
+    }
+    .wrap > .row
+    {
+        height: 100%;
+    } 
+    .home i , .user i 
+    {
+        color: black;
+    }
+    /* Dưới kích thước màn hình large (tương đương kích thước lg), bạn có thể điều chỉnh hoặc giữ full-width */
+    .col-lg-20 {
+        width: 49%;
+        /* Hoặc điều chỉnh kích thước cột tùy ý cho màn hình nhỏ hơn */
+    }
+
+    .list {
+        margin-inline: 0px !important;
+        width: 100vw !important;
+        padding-inline: 1rem;
+    }
+
+    .margin {
+        margin-inline: 1%;
+    }
+
+}
+
+@media screen and (max-width: 576.98px) {
+    header {
+        display: flex;
+        align-items: center;
+    }
+
+    .bar {
+        font-size: 18px;
+    }
+    .fz {
+        font-size: 14px;
+        display: inline-block;
+        padding-top: 2px;
+    }
+    .d-flex .dot::before {
+        content: "•";
+        /* Ký tự dấu chấm */
+        margin-left: 10px;
+        color: gray;
+        opacity: 0.5;
+        padding-right: 8px;
+    }
+    .pMap {
+        margin-top: 16px;
+    }
+
+    .cart span {
+        left: 10px;
+        top: -10px;
+        font-size: 9px;
+        width: 10px;
+        height: 10px;
+    }
+
+
+    .search a {
+        display: none;
+    }
+
+    .search input {
+        width: 80%;
+    }
+
+    .col-lg-20 {
+        width: 48%;
+        /* Hoặc điều chỉnh kích thước cột tùy ý cho màn hình nhỏ hơn */
+    }
+}
+
+.imgmin {
+    width: 20px;
+    height: 20px;
+    align-items: center;
+}
+
+.img_real {
+    width: 95px;
+    height: 25px;
+}
+
+
+.quantity-selector {
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.quantity-controls {
+    display: flex;
+
+    margin-top: 10px;
+}
+
+button.minus {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+
+    border-radius: 5px;
+}
+
+button.plus {
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+input[type="number"] {
+    width: 50px;
+    text-align:right;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.nutthanhtoan {
+    background-color:#9fca45;
+    color: white;
+}
+
+.nutthanhtoan1, .nutthanhtoan2 {
+    border: #9fca45 1px solid;
+    color:#9fca45;
+}
+
+button:focus {
+    outline: none;
+}
+
+.Kichco {
+display: flex;
+gap: 10px;
+margin-top: 25px;
+}
+
+.co {
+    background-color: #9fca45;
+    width: 30px;
+    padding: 5px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+}
+
+.co:hover {
+    background-color: rgb(117, 117, 117);
+
+}
